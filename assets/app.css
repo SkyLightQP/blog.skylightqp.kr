@@ -15,6 +15,20 @@
   button {
     @apply pointer-events-auto !important;
   }
+
+  *::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    @apply bg-gray-200/70;
+
+  }
+
+  *::-webkit-scrollbar-track {
+    @apply bg-gray-100;
+  }
 }
 
 @layer utilities {
