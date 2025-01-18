@@ -1,0 +1,16 @@
+script.
+  const elementsInPost = document.querySelectorAll(".entry-content p,h1,h2,h3,li");
+  let wordCount = 0;
+  elementsInPost.forEach((element) => {
+    if (element.textContent === "") return;
+    wordCount += element.innerText.split(" ").length;
+  });
+  const WPM = 180;
+  let min = Math.floor(wordCount / WPM);
+  let sec = Math.round(((wordCount / WPM - min) * 60) % 60);
+
+  min += Math.floor(sec / 60);
+  sec %= 60;
+
+  const readTimeElement = document.querySelector(".read-time");
+  readTimeElement.innerText = `읽는시간 ${min}분 ${sec}초`;
