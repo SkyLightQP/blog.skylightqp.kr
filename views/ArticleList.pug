@@ -14,10 +14,10 @@ s_list
                 | [##_list_rep_summary_##]
               s_list_rep_thumbnail
                 div
-                  img(src="[##_list_rep_thumbnail_##]" class="w-full h-32 object-cover rounded-md group-hover:brightness-75")
+                  img(src="[##_list_rep_thumbnail_##]" class="w-full h-32 object-cover rounded-md group-hover:brightness-75 transition-all ease-in-out")
   div(class="flex justify-end mt-10")
     s_paging
-      a([##_next_page_##] class="px-2.5 py-2 rounded-md cursor-pointer hover:bg-gray-100 view-more") 더보기 →
+      a([##_next_page_##] class="px-2.5 py-2 rounded-md cursor-pointer hover:bg-gray-100 transition-all ease-in-out view-more") 더보기 →
 
 script.
   const viewMoreButton = document.querySelector(".view-more");
