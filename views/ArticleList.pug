@@ -21,10 +21,13 @@ s_list
 
 script.
   const viewMoreButton = document.querySelector(".view-more");
+  const nextUrl = viewMoreButton.getAttribute("href");
+
+  if (!nextUrl) $(".view-more").remove();
+
   viewMoreButton.addEventListener('click', (e) => {
     e.preventDefault();
-    const nextUrl = viewMoreButton.getAttribute("href");
-    viewMore(nextUrl);
+    if (nextUrl) viewMore(nextUrl);
   });
 
   function viewMore(url) {
