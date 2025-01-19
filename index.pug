@@ -2,6 +2,10 @@ extends app
 
 block TIDORY
   s_t3
-    div(class="")
+    div
       include views/Header
-      include views/Bottom
+      div(class="pt-32")
+        div(class="mx-auto max-w-screen-md xl:max-w-screen-lg")
+          include views/ArticleList
+          include views/Article
+        include views/Bottom
