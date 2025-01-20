@@ -3,7 +3,7 @@ s_list
   p(class="mt-10 text-xl font-bold") 최근 글들을 확인해보세요 →
   div(class="post-list")
     s_list_rep
-      article(class="py-5 group post-item")
+      article(class="py-5 group post-item hidden lg:block")
         a(href="[##_list_rep_link_##]")
           div
             h2(class="text-2xl font-bold group-hover:underline")
@@ -15,6 +15,17 @@ s_list
               s_list_rep_thumbnail
                 div
                   img(src="[##_list_rep_thumbnail_##]" class="w-full h-32 object-cover rounded-md group-hover:brightness-75 transition-all ease-in-out")
+      article(class="py-5 group post-item lg:hidden")
+        a(href="[##_list_rep_link_##]")
+          div
+            s_list_rep_thumbnail
+              div(class="mb-2")
+                img(src="[##_list_rep_thumbnail_##]" class="w-full h-auto object-cover rounded-md group-hover:brightness-75 transition-all ease-in-out")
+            h2(class="text-2xl font-bold group-hover:underline") [##_list_rep_title_text_##]
+            span(class="text-base font-normal text-gray-500/70") [##_list_rep_category_##] / [##_list_rep_regdate_##]
+            div(class="flex justify-between")
+              div(class="mt-1 break-keep w-full max-h-32 line-clamp-5")
+                | [##_list_rep_summary_##]
   div(class="flex justify-end mt-10")
     s_paging
       a([##_next_page_##] class="px-2.5 py-2 rounded-md cursor-pointer hover:bg-gray-100 transition-all ease-in-out view-more") 더보기 →
