@@ -48,6 +48,25 @@
     padding: 4px 5px;
     font-family: 'D2Coding', monospace;
   }
+
+  .post-content h1, h2, h3 {
+    @apply mt-5;
+    @apply mb-2;
+    font-weight: bold !important;
+  }
+
+  .post-content pre {
+    @apply rounded-md;
+    @apply p-2;
+  }
+
+  .post-content pre code {
+    font-family: 'D2Coding', monospace;
+  }
+
+  .post-content ul, ol {
+    @apply pl-6;
+  }
 }
 
 @layer utilities {
