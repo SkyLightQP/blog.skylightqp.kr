@@ -1,6 +1,6 @@
 s_article_rep
   s_permalink_article_rep
-    article
+    article(class="post-content")
       h1(class="text-4xl font-bold") [##_article_rep_title_##]
       div(class="mt-2 text-gray-500/70 text-base lg:text-lg")
         | [##_article_rep_category_##] / [##_article_rep_regdate_##] /&nbsp;
@@ -9,3 +9,4 @@ s_article_rep
     s_rp(class="mt-10")
       include Scripts/GiscusComment
     include Scripts/ReadTime
+    include Scripts/InlineCodeBlock

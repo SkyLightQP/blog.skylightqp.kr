@@ -3,8 +3,16 @@
 @tailwind utilities;
 
 @layer base {
+  @font-face {
+    font-family: 'D2Coding';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/D2Coding.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
   html, body {
     @apply font-pretendard;
+    color: #131313;
   }
 
   .menu_toolbar {
@@ -28,6 +36,17 @@
 
   *::-webkit-scrollbar-track {
     @apply bg-gray-100;
+  }
+
+  span.ccode, .post-content p code {
+    background-color: #f0f0f0;
+    color: #131313;
+    margin: 28px auto;
+    word-wrap: break-word;
+    font-size: 14px;
+    border-radius: 6px;
+    padding: 4px 5px;
+    font-family: 'D2Coding', monospace;
   }
 }
 
