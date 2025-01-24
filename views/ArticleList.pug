@@ -30,31 +30,4 @@ s_list
     s_paging
       a([##_next_page_##] class="px-2.5 py-2 rounded-md cursor-pointer hover:bg-gray-100 transition-all ease-in-out view-more") 더보기 →
 
-script.
-  const viewMoreButton = document.querySelector(".view-more");
-  const nextUrl = viewMoreButton.getAttribute("href");
-
-  if (!nextUrl) $(".view-more").remove();
-
-  viewMoreButton.addEventListener('click', (e) => {
-    e.preventDefault();
-    if (nextUrl) viewMore(nextUrl);
-  });
-
-  function viewMore(url) {
-    $.ajax({ url }).done((res) => {
-      const $html = $(res);
-      const $nextPostItem = $html.find(".post-item");
-      const $nextViewMoreHref = $html.find(".view-more").attr("href");
-
-      if ($nextPostItem.length > 0) {
-        $(".post-list").append($nextPostItem);
-      }
-
-      if (!$nextViewMoreHref) {
-        $(".view-more").remove();
-      } else {
-        $(".view-more").attr("href", $nextViewMoreHref);
-      }
-    });
-  }
+  include Scripts/ViewMoreButton
