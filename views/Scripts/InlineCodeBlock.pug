@@ -1,5 +1,5 @@
 script.
-  const textNodes = document.querySelectorAll(".entry-content > *:not(figure):not(pre)");
+  const textNodes = document.querySelectorAll(".post-content > *:not(figure):not(pre)");
   textNodes.forEach(node => {
     node.innerHTML = node.innerHTML.replace(/`(.*?)`/g, '<code>$1</code>');
   });
