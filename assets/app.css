@@ -49,7 +49,7 @@
     font-family: 'D2Coding', monospace;
   }
 
-  .post-content h1, h2, h3 {
+  .post-content h1, h2, h3, h4, h5 {
     @apply mt-5;
     @apply mb-2;
     font-weight: bold !important;
