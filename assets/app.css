@@ -37,40 +37,56 @@
   *::-webkit-scrollbar-track {
     @apply bg-gray-100;
   }
-
-  span.ccode, .post-content p code {
-    background-color: #f0f0f0;
-    color: #131313;
-    margin: 28px auto;
-    word-wrap: break-word;
-    font-size: 14px;
-    border-radius: 6px;
-    padding: 4px 5px;
-    font-family: 'D2Coding', monospace;
-  }
-
-  .post-content h1, h2, h3, h4, h5 {
-    @apply mt-5;
-    @apply mb-2;
-    font-weight: bold !important;
-  }
-
-  .post-content pre {
-    @apply rounded-md;
-    @apply p-2;
-  }
-
-  .post-content pre code {
-    font-family: 'D2Coding', monospace;
-  }
-
-  .post-content ul, ol {
-    @apply pl-6;
-  }
 }
 
 @layer utilities {
   .text-hidden {
     @apply absolute w-px h-px -m-px overflow-hidden !important;
   }
+}
+
+span.ccode, .post-content p code {
+  background-color: #f0f0f0;
+  color: #131313;
+  margin: 28px auto;
+  word-wrap: break-word;
+  font-size: 14px;
+  border-radius: 6px;
+  padding: 4px 5px;
+  font-family: 'D2Coding', monospace;
+}
+
+.post-content pre {
+  @apply rounded-md;
+  @apply p-2;
+}
+
+.post-content pre code {
+  font-family: 'D2Coding', monospace;
+}
+
+.post-content ul, ol {
+  @apply pl-6;
+}
+
+.post-content h1, h2, h3, h4, h5 {
+  @apply mt-5;
+  @apply mb-2;
+  font-weight: bold !important;
+}
+
+.tt_box_namecard {
+  @apply hidden;
+}
+
+.another_category {
+  border: none !important;
+}
+
+.another_category h4 {
+  border-bottom: none !important;
+}
+
+.another_category table {
+  margin-top: 0 !important;
 }
