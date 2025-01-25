@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <skin>
    <information>
-      <name>TIDORY</name>
+      <name>blog.skylightqp.kr</name>
       <version>1.0</version>
       <description>
-         <![CDATA[티스토리 프레임워크, 티도리(TIDORY)]]>
+         <![CDATA[SKIN for blog.skylightqp.kr]]>
       </description>
       <license>
          <![CDATA[MIT]]>
       </license>
    </information>
    <author>
-      <name>SangWoo Jeong</name>
-      <homepage>https://github.com/pronist</homepage>
-      <email>pronist@naver.com</email>
+      <name>Daegyeom Ha (SkyLightQP)</name>
+      <homepage>https://daegyeo.me</homepage>
+      <email>combbm@gmail.com</email>
    </author>
 </skin>
