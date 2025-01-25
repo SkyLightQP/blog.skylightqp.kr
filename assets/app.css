@@ -57,16 +57,23 @@ span.ccode, .post-content p code {
 }
 
 .post-content pre {
-  @apply rounded-md;
   @apply p-2;
+  @apply mx-2;
 }
 
 .post-content pre code {
   font-family: 'D2Coding', monospace;
+  @apply bg-gray-200/30;
+  @apply rounded-lg;
 }
 
 .post-content ul, ol {
   @apply pl-6;
+  @apply py-1.5;
+}
+
+.post-content h1, h2, h3, h4, h5, p {
+  font-family: 'Pretendard Variable', sans-serif !important;
 }
 
 .post-content h1, h2, h3, h4, h5 {
