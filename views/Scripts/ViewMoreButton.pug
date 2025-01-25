@@ -1,12 +1,12 @@
 script.
   const viewMoreButton = document.querySelector(".view-more");
   if (viewMoreButton) {
-    const nextUrl = viewMoreButton.getAttribute("href");
-
+    let nextUrl = viewMoreButton.getAttribute("href");
     if (!nextUrl) $(".view-more").remove();
 
     viewMoreButton.addEventListener('click', (e) => {
       e.preventDefault();
+      nextUrl = viewMoreButton.getAttribute("href");
       if (nextUrl) viewMore(nextUrl);
     });
   }
