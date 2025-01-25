@@ -6,11 +6,15 @@ s_article_rep
         | [##_article_rep_category_##] / [##_article_rep_regdate_##] /&nbsp;
         span(class="read-time") 읽는시간 0분 0초
       div(class="mt-10 post-content") [##_article_rep_desc_##]
+      s_tag_label
+        p(class="mt-4 ml-2 text-gray-500/70 text-sm lg:text-base")
+          span(class="font-bold ") TAG&nbsp;
+          | [##_tag_label_rep_##]
     div(class="mt-10")
       include Scripts/GiscusComment
     s_rp
       s_rp_container
-        div
+        div(class="mt-4")
           ul
             s_rp_rep
               li(id="[##_rp_rep_id_##]")
