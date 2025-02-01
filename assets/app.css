@@ -61,7 +61,7 @@ span.ccode, .post-content p code {
   @apply mx-2;
 }
 
-.post-content pre, .post-content code {
+.post-content pre, code {
   font-family: 'D2Coding', monospace;
   @apply bg-gray-200/30;
   @apply rounded-lg;
