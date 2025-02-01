@@ -83,6 +83,16 @@ span.ccode, .post-content p code {
   font-weight: bold !important;
 }
 
+.post-content a {
+  @apply underline;
+  @apply transition-all;
+  @apply ease-in-out;
+
+  &:hover {
+    @apply text-blue-700;
+  }
+}
+
 .tt_box_namecard {
   @apply hidden;
 }
