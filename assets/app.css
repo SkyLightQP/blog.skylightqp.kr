@@ -61,26 +61,30 @@ span.ccode, .post-content p code {
   @apply mx-2;
 }
 
-.post-content pre code {
+.post-content pre, .post-content code {
   font-family: 'D2Coding', monospace;
   @apply bg-gray-200/30;
   @apply rounded-lg;
 }
 
-.post-content ul, ol {
+.post-content ul, .post-content ol {
   @apply pl-6;
   @apply py-1.5;
 }
 
-.post-content h1, h2, h3, h4, h5, p {
-  font-family: 'Pretendard Variable', sans-serif !important;
-  line-height: 1.8 !important;
+.post-content {
+  & h1, & h2, & h3, & h4, & h5, & p {
+    font-family: 'Pretendard Variable', sans-serif !important;
+    line-height: 1.8 !important;
+  }
 }
 
-.post-content h1, h2, h3, h4, h5 {
-  @apply mt-5;
-  @apply mb-2;
-  font-weight: bold !important;
+.post-content {
+  & h1, & h2, & h3, & h4, & h5 {
+    @apply mt-5;
+    @apply mb-2;
+    font-weight: bold !important;
+  }
 }
 
 .post-content a {
