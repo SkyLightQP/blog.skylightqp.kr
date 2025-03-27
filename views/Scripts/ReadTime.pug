@@ -5,7 +5,7 @@ script.
     if (element.textContent === "") return;
     wordCount += element.innerText.split(" ").length;
   });
-  const WPM = 180;
+  const WPM = 190;
   let min = Math.floor(wordCount / WPM);
   let sec = Math.round(((wordCount / WPM - min) * 60) % 60);
 
@@ -13,4 +13,4 @@ script.
   sec %= 60;
 
   const readTimeElement = document.querySelector(".read-time");
-  readTimeElement.innerText = `읽는시간 ${min}분 ${sec}초`;
+  readTimeElement.innerText = `읽는시간 ${min}분`;
