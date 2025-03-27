@@ -100,6 +100,14 @@ span.ccode, .post-content p code {
   }
 }
 
+.post-content blockquote {
+  @apply border-l-4;
+  @apply border-blue-600;
+  @apply bg-gray-200/40;
+  @apply pl-4 py-2;
+  @apply text-gray-600;
+}
+
 .tt_box_namecard {
   @apply hidden;
 }
