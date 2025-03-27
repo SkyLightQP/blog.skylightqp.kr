@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        "pretendard": ["Pretendard Variable", ...defaultTheme.fontFamily.sans]
+        "pretendard": ["Pretendard Variable", 'Fluent Emoji Color', ...defaultTheme.fontFamily.sans],
       }
     }
   },
