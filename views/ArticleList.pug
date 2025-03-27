@@ -1,15 +1,15 @@
 s_list
   include Introduce
-  p(class="mt-10 text-xl font-bold") 최근 글들을 확인해보세요 →
+  p(class="mt-10 text-xl font-bold mb-4") 최근 글들을 확인해보세요 →
   div(class="post-list")
     s_list_rep
       article(class="py-5 group post-item hidden lg:block")
         a(href="[##_list_rep_link_##]")
           div
-            h2(class="text-2xl font-bold group-hover:underline")
+            h1(class="text-2xl font-bold group-hover:underline")
               | [##_list_rep_title_text_##]
-              span(class="text-base font-normal text-gray-500/70 ml-1") / [##_list_rep_category_##] / [##_list_rep_regdate_##]
-            div(class="flex justify-between")
+              span(class="text-base font-normal text-gray-400 ml-2") [##_list_rep_category_##], [##_list_rep_regdate_##]
+            div(class="flex justify-between flex-1")
               div(class="mt-1 break-keep w-3/5 max-h-32 line-clamp-5")
                 | [##_list_rep_summary_##]
               s_list_rep_thumbnail
@@ -21,8 +21,8 @@ s_list
             s_list_rep_thumbnail
               div(class="mb-2")
                 img(src="[##_list_rep_thumbnail_##]" class="w-full h-auto object-cover rounded-md group-hover:brightness-75 transition-all ease-in-out")
-            h2(class="text-2xl font-bold group-hover:underline") [##_list_rep_title_text_##]
-            span(class="text-base font-normal text-gray-500/70") [##_list_rep_category_##] / [##_list_rep_regdate_##]
+            h1(class="text-2xl font-bold group-hover:underline mt-4") [##_list_rep_title_text_##]
+            span(class="text-base font-normal text-gray-400") [##_list_rep_category_##], [##_list_rep_regdate_##]
             div(class="flex justify-between")
               div(class="mt-1 break-keep w-full max-h-32 line-clamp-5")
                 | [##_list_rep_summary_##]
