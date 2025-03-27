@@ -9,12 +9,12 @@ s_list
             h1(class="text-2xl font-bold group-hover:underline")
               | [##_list_rep_title_text_##]
               span(class="text-base font-normal text-gray-400 ml-2") [##_list_rep_category_##], [##_list_rep_regdate_##]
-            div(class="flex justify-between flex-1")
-              div(class="mt-1 break-keep w-3/5 max-h-32 line-clamp-5")
+            div(class="flex justify-between flex-1 mt-1")
+              div(class="break-keep w-3/5 max-h-[7.6rem] line-clamp-5")
                 | [##_list_rep_summary_##]
               s_list_rep_thumbnail
                 div
-                  img(src="[##_list_rep_thumbnail_##]" class="w-full h-32 object-cover rounded-md group-hover:brightness-75 transition-all ease-in-out")
+                  img(src="[##_list_rep_thumbnail_##]" class="w-auto h-32 rounded-md group-hover:brightness-75 transition-all ease-in-out")
       article(class="py-5 group post-item lg:hidden")
         a(href="[##_list_rep_link_##]")
           div
