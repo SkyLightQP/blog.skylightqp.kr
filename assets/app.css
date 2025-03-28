@@ -80,7 +80,7 @@ span.ccode, .post-content p code {
 
 .post-content {
   & h1, & h2, & h3, & h4, & h5, & p {
-    font-family: 'Pretendard Variable', 'Fluent Emoji Color', sans-serif !important;
+    @apply !font-pretendard;
     line-height: 1.8 !important;
   }
 }
