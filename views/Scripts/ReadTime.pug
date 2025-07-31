@@ -5,7 +5,7 @@ script.
     if (element.textContent === "") return;
     wordCount += element.innerText.split(" ").length;
   });
-  const WPM = 170;
+  const WPM = 100;
   let min = Math.floor(wordCount / WPM);
   let sec = Math.round(((wordCount / WPM - min) * 60) % 60);
 
