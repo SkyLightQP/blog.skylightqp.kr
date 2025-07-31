@@ -8,6 +8,9 @@ module.exports = {
     extend: {
       fontFamily: {
         "pretendard": ["Pretendard Variable", 'Fluent Emoji Color', ...defaultTheme.fontFamily.sans],
+      },
+      screens: {
+        'lg': '940px'
       }
     }
   },
