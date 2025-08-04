@@ -2,10 +2,12 @@ s_article_rep
   s_permalink_article_rep
     article
       h1(class="text-2xl lg:text-3xl font-bold") [##_article_rep_title_##]
-      div(class="mt-0 lg:mt-1 text-gray-400 text-base")
-        | [##_article_rep_category_##]&nbsp;&middot;&nbsp;
-        span(class="read-time") 읽는시간 0분
-        | &nbsp;&middot; [##_article_rep_regdate_##]
+      div(class="flex mt-1 space-x-2")
+        span(class="px-2 py-0.5 rounded-md bg-gray-200/50 text-sm")
+          | [##_article_rep_category_##]
+        span(class="px-2 py-0.5 rounded-md bg-gray-200/50 text-sm read-time") 읽는시간 0분
+        span(class="px-2 py-0.5 rounded-md bg-gray-200/50 text-sm")
+          | [##_article_rep_regdate_##]
       div(class="mt-10 post-content") [##_article_rep_desc_##]
       s_tag_label
         p(class="mt-4 ml-2 text-gray-500/70 text-sm lg:text-base")
