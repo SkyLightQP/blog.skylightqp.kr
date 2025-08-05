@@ -17,17 +17,20 @@ s_list
                     | [##_list_rep_regdate_##]
                 div(class="break-keep w-auto line-clamp-1 mt-2.5")
                   | [##_list_rep_summary_##]
-      article(class="py-5 group post-item lg:hidden")
+      article(class="py-6 group post-item lg:hidden")
         a(href="[##_list_rep_link_##]")
           div
             s_list_rep_thumbnail
               div(class="mb-2")
                 img(src="[##_list_rep_thumbnail_##]" class="w-full h-auto object-cover rounded-md group-hover:brightness-75 transition-all ease-in-out")
-            h1(class="text-2xl font-bold group-hover:underline mt-4") [##_list_rep_title_text_##]
-            span(class="text-base font-normal text-gray-400") [##_list_rep_category_##] &middot; [##_list_rep_regdate_##]
-            div(class="flex justify-between")
-              div(class="mt-1 break-keep w-full max-h-[2.6rem] line-clamp-2")
-                | [##_list_rep_summary_##]
+            h1(class="text-2xl font-bold group-hover:underline mt-4 break-words") [##_list_rep_title_text_##]
+            div(class="flex mt-1 space-x-2")
+              span(class="px-2 py-0.5 rounded-md bg-gray-200/50 text-sm")
+                | [##_list_rep_category_##]
+              span(class="px-2 py-0.5 rounded-md bg-gray-200/50 text-sm")
+                | [##_list_rep_regdate_##]
+            div(class="break-keep w-auto line-clamp-1 mt-2.5")
+              | [##_list_rep_summary_##]
   div(class="flex justify-end mt-14")
     s_paging
       a([##_next_page_##] class="px-2.5 py-2 rounded-md cursor-pointer hover:bg-gray-100 transition-all ease-in-out view-more") 더보기 →
